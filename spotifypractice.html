@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title></title>
+</head>
+<body>
+<!--   <div class="container"> 
+    <iframe src="https://open.spotify.com/embed?uri=spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+  </div> -->
+
+</body>
+<script> 
+
+function loginSpotify () {
+
+var authCode = "3134bcfa555b4933a9d6e61d83753f7b"
+
+$.ajax({
+  url: "https://accounts.spotify.com/authorize?client_id=" + authCode + "&redirect_uri=http://google.com&response_type=token",
+  method:'GET',
+}).done(function(data) {
+  console.log(data)
+})
+}
+loginSpotify()
+
+
+// app.get('/login', function(req, res) {
+// var scopes = 'user-read-private user-read-email';
+// res.redirect('https://accounts.spotify.com/authorize' +
+//   '?response_type=code' +
+//   '&client_id=' + my_client_id +
+//   (scopes ? '&scope=' + encodeURIComponent(scopes) : '') +
+//   '&redirect_uri=' + encodeURIComponent(redirect_uri));
+// });
+
+  // function displayMovieInfo() {
+
+  //       var song = "reckoner";
+  //       var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+
+  //       // Creates AJAX call for the specific movie button being clicked
+  //       $.ajax({
+  //         url: queryURL,
+  //         method: "GET"
+  //       }).done(function(response) {
+
+  //         // YOUR CODE GOES HERE!!!
+  //         $("#poster").html("<img src =" + response.Poster + " </img>")
+  //         $("#rating").html(response.Rated)
+  //         $("#release").html(response.Released)
+  //         $("#plot").html(response.Plot)
+  //         console.log(response)
+  //         console.log("<img src =" + response.Poster + " </img>")
+
+  //       });
+
+  //     }
+</script>
+</html>
