@@ -1,0 +1,48 @@
+/* 
+
+
+ .container {
+  position: relative;
+  height: 1 rem;
+  
+}
+
+.jumbotron-fluid {
+  margin: 0px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0.5em 0.6em;
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.0em;
+        .btn {
+            padding: 0.5em;
+        }
+    }
+}
+
+
+
+
+
+
+}
+
+.row {
+	margin: absolute;
+	font-family: 'Open Sans', sans-serif;
+  	font-family: 'Roboto', sans-serif;
+  	font-family: 'Roboto Mono', monospace;
+}
+
+.search-bar {
+	margin: 250px;
+
+}
+
+.button {
+	border:solid;
+}*/
