@@ -1,5 +1,6 @@
  var songTitle;
  var spotifySongResult;
+ var currentSong;
 
  // Generate link for sign in button using application ID from Spotify
   function makeSignInLink(){
@@ -70,6 +71,45 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
       });
   })
 
+ function printTopResults() {
+    for (var i = 0; i < 5; i++) {
+      var iPlus = i+1;
+      $("#albumimage"+iPlus).attr('src', spotifySongResult.tracks.items[i].album.images[0].url);
+      $("#albumimage"+iPlus).parent().data('spotifyID', spotifySongResult.tracks.items[i].id);
+      // console.log("----- Spotify ID -----");
+      // console.log($("#song-img"+iPlus).data('spotifyID'));
+      $("#songtitle"+iPlus).html(spotifySongResult.tracks.items[i].name);
+      $("#albumtitle"+iPlus).html(spotifySongResult.tracks.items[i].album.name);
+      $("#artisttitle"+iPlus).html(spotifySongResult.tracks.items[i].artists[0].name);
+    }
+  }
+
+
+
+
+
+$('#searchbar').keyup(function(e){
+
+    search = $(this).val();
+
+    // Only run query when key pressed is a letter (a = 65 and z = 90)
+    if(e.keyCode >= 65 && e.keyCode <= 90){
+      spotifySongSearch(search);
+    }
+
+});
+ 
+$('.dropdown-row').on('click', function(){
+  var div = $(this);
+  // set currentSong
+  currentSong = {
+    'title': div.children("[id*='songtitle']").html(),
+    'album': div.children("[id*='albumtitle']").html(),
+    'albumImg': div.children("[id*='albumimage']").attr('src'),
+    'artist': div.children("[id*='artisttitle']").html(),
+    'spotifyID': div.data('spotifyID')
+  };
+});
 // Album image, and song title, artist, and album title information.
 
 
