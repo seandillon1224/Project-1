@@ -69,8 +69,8 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         spotifySongResult = songResponse;
         console.log(spotifySongResult)
       });
-function printTopResults() {
-  console.log("dog")
+// function printTopResults() {
+//   console.log("dog")
     for (var i = 0; i < 5; i++) {
       var iPlus = i+1;
       $("#albumimage"+iPlus).attr('src', spotifySongResult.tracks.items[i].album.images[0].url);
