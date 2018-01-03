@@ -57,7 +57,12 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
     // Run an initial search to identify the song's (track) unique Spotify ID
     var queryURL1 = "https://api.spotify.com/v1/search?q=" + songTitle + "&type=track";
 
-      $.ajax({url: queryURL1, method: 'GET'}).done(function(songResponse) {
+      $.ajax({
+        url: queryURL1,  
+        headers: {
+          'Authorization': 'Bearer ' + spotifyAccessToken
+        }, 
+        method: 'GET'}).done(function(songResponse) {
 
         // Globally store the Song Search Response
         spotifySongResult = songResponse;
