@@ -63,7 +63,7 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         spotifySongResult = songResponse;
         console.log(spotifySongResult)
       });
-  }
+  })
 
 // Album image, and song title, artist, and album title information.
 
