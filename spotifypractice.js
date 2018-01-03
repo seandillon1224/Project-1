@@ -48,6 +48,8 @@
 
 // Search Spotify by song title
 $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
+
+  event.preventDefault()
   
   songTitle = $(".searchbar").val()
   console.log(songTitle)
@@ -68,12 +70,9 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         // Globally store the Song Search Response
         spotifySongResult = songResponse;
         console.log(spotifySongResult)
-      });
 
 
-// function printTopResults() {
-//   console.log("dog")
-    for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 5; i++) {
       console.log(spotifySongResult)
       var iPlus = i+1;
       $("#albumimage"+iPlus).attr('src', spotifySongResult.tracks.items[i].album.images[0].url);
@@ -84,6 +83,12 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
       $("#albumtitle"+iPlus).html(spotifySongResult.tracks.items[i].album.name);
       $("#artisttitle"+iPlus).html(spotifySongResult.tracks.items[i].artists[0].name);
     }
+      });
+
+
+// function printTopResults() {
+//   console.log("dog")
+    
   })
 
 
