@@ -1,3 +1,6 @@
+ var songTitle;
+ var spotifySongResult;
+
  // Generate link for sign in button using application ID from Spotify
   function makeSignInLink(){
     var msrtSpotifyClientId = "3134bcfa555b4933a9d6e61d83753f7b";
@@ -41,6 +44,32 @@
       });
     }
   }
+
+// Search Spotify by song title
+$(".searchbutton").on("click", function spotifySongSearch (songTitle) {
+  
+  songTitle = $(".searchbar").val()
+  console.log(songTitle)
+
+    // Replace any spaces with a plus sign for query
+    songTitle = songTitle.trim().replace(/ /g, "+");
+
+    // Run an initial search to identify the song's (track) unique Spotify ID
+    var queryURL1 = "https://api.spotify.com/v1/search?q=" + songTitle + "&type=track";
+
+      $.ajax({url: queryURL1, method: 'GET'}).done(function(songResponse) {
+
+        // Globally store the Song Search Response
+        spotifySongResult = songResponse;
+        console.log(spotifySongResult)
+      });
+  }
+
+// Album image, and song title, artist, and album title information.
+
+
+
+
 
 
 $(document).ready(function(){
