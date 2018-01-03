@@ -81,7 +81,6 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
       $("#albumtitle"+iPlus).html(spotifySongResult.tracks.items[i].album.name);
       $("#artisttitle"+iPlus).html(spotifySongResult.tracks.items[i].artists[0].name);
     }
-  }
   })
 
 
