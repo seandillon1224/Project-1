@@ -69,9 +69,7 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         spotifySongResult = songResponse;
         console.log(spotifySongResult)
       });
-  })
-
- function printTopResults() {
+function printTopResults() {
     for (var i = 0; i < 5; i++) {
       var iPlus = i+1;
       $("#albumimage"+iPlus).attr('src', spotifySongResult.tracks.items[i].album.images[0].url);
@@ -83,6 +81,9 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
       $("#artisttitle"+iPlus).html(spotifySongResult.tracks.items[i].artists[0].name);
     }
   }
+  })
+
+
 
 // $('#searchbar').keyup(function(e){
 
