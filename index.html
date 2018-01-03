@@ -50,47 +50,13 @@
         <a class="nav-link" href="#">About</a>
       </li>
     </ul>
-    <form>
-              <div class="input-field">
-                <!-- Dropdown Trigger inside search bar-->
-                <input id="searchbar" type="search" type="text" name="q" placeholder="Search..." class="dropdown-button btn" href="#" data-toggle="collapse" data-target="searchDropdown" autocomplete="off"/>
-                <label for="search"><i id="spyglass">search</i></label>
-                <!-- Dropdown Structure -->
-                <ul id="searchDropdown" class="dropdown-content search-dropdown-content collection">
-                  <li class="dropdown-row">
-                      <img id="albumimage1" class="search-album-img">
-                      <div id="songtitle1" class="center-align">Song Title</div>
-                      <div id="albumtitle1" class="center-align">Song Album</div>
-                      <div id="artisttitle1" class="center-align">Song Artist</div>
-                  </li>
-                  <li class="dropdown-row">
-                      <img id="albumimage2" class="search-album-img">
-                      <div id="songtitle2" class="center-align">Song Title</div>
-                      <div id="albumtitle2" class="center-align">Song Album</div>
-                      <div id="artisttitle2" class="center-align">Song Artist</div>
-                  </li>
-                  <li class="dropdown-row">
-                      <img id="albumimage3" class="search-album-img">
-                      <div id="songtitle3" class="center-align">Song Title</div>
-                      <div id="albumtitle3" class="center-align">Song Album</div>
-                      <div id="artisttitle3" class="center-align">Song Artist</div>
-                  </li>
-                  <li class="dropdown-row">
-                      <img id="albumimage4" class="search-album-img">
-                      <div id="songtitle4" class="center-align">Song Title</div>
-                      <div id="albumtitle4" class="center-align">Song Album</div>
-                      <div id="artisttitle4" class="center-align">Song Artist</div>
-                  </li>
-                  <li class="dropdown-row">
-                      <img id="albumimage5" class="search-album-img">
-                      <div id="songtitle5" class="center-align">Song Title</div>
-                      <div id="albumtitle5" class="center-align">Song Album</div>
-                      <div id="artisttitle5" class="center-align">Song Artist</div>
-                  </li>
-                </ul>
-              </div>
-            </form>
-</nav>
+    <form class="form-inline my-2 my-lg-0">
+       <input class="form-control mr-sm-2 searchbar" type="text" placeholder="Search">
+       <button class="btn btn-secondary my-2 my-sm-0 searchbutton" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+    
 
 <div>
   <a id="sign-in" href="" class=""><i class="material-icons right"></i>Sign In</a>
@@ -104,3 +70,6 @@
 </body>
 <script type="text/javascript" src="./spotifypractice.js"></script>
 </html>
+
+
+

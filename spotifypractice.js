@@ -84,32 +84,28 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
     }
   }
 
+// $('#searchbar').keyup(function(e){
 
+//     search = $(this).val();
 
+//     // Only run query when key pressed is a letter (a = 65 and z = 90)
+//     if(e.keyCode >= 65 && e.keyCode <= 90){
+//       spotifySongSearch(search);
+//     }
 
-
-$('#searchbar').keyup(function(e){
-
-    search = $(this).val();
-
-    // Only run query when key pressed is a letter (a = 65 and z = 90)
-    if(e.keyCode >= 65 && e.keyCode <= 90){
-      spotifySongSearch(search);
-    }
-
-});
+// });
  
-$('.dropdown-row').on('click', function(){
-  var div = $(this);
-  // set currentSong
-  currentSong = {
-    'title': div.children("[id*='songtitle']").html(),
-    'album': div.children("[id*='albumtitle']").html(),
-    'albumImg': div.children("[id*='albumimage']").attr('src'),
-    'artist': div.children("[id*='artisttitle']").html(),
-    'spotifyID': div.data('spotifyID')
-  };
-});
+// $('.dropdown-row').on('click', function(){
+//   var div = $(this);
+//   // set currentSong
+//   currentSong = {
+//     'title': div.children("[id*='songtitle']").html(),
+//     'album': div.children("[id*='albumtitle']").html(),
+//     'albumImg': div.children("[id*='albumimage']").attr('src'),
+//     'artist': div.children("[id*='artisttitle']").html(),
+//     'spotifyID': div.data('spotifyID')
+//   };
+// });
 // Album image, and song title, artist, and album title information.
 
 
