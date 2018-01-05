@@ -4,9 +4,9 @@
 <html>
 
 <head>
-	<title>Project One</title>
+  <title>Project One</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
@@ -20,9 +20,9 @@
   </style>
 
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
 
 </head>
 
@@ -60,12 +60,19 @@
 
 <div>
   <a id="sign-in" href="" class=""><i class="material-icons right"></i>Sign In</a>
-  <div id="albumimage"></div>
-  <div id="albumtitle"></div>
-  <div id="artisttitle"></div>
-  <div id="songtitle"></div>
+  <ul id="artist-container">
+  </ul>
 </div>
 
+<div>
+  <ul id="lyrics-container">
+    <button class="btn btn-secondary my-2 my-sm-0 searchbutton2" type="submit">Search</button>
+  </ul>
+</div>
+
+<div id="playerDiv">
+  <button class="btn btn-secondary my-2 my-sm-0 playButton" type="submit">Play!</button>
+</div>
 
 </body>
 <script type="text/javascript" src="./spotifypractice.js"></script>
