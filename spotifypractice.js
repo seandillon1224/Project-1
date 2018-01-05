@@ -11,7 +11,7 @@
   function makeSignInLink(){
     var msrtSpotifyClientId = "3134bcfa555b4933a9d6e61d83753f7b";
 
-    var queryURLforSpotifyToken = "https://accounts.spotify.com/authorize/?client_id=" + msrtSpotifyClientId + "&response_type=token&redirect_uri=localhost:8080"
+    var queryURLforSpotifyToken = "https://accounts.spotify.com/authorize/?client_id=" + msrtSpotifyClientId + "&response_type=token&redirect_uri=https://seandillon1224.github.io/Project-1/"
     // console.log(queryURLforSpotifyToken);
 
     $("#button_signup").append("<a href='"+queryURLforSpotifyToken+"' class='button'>Sign Up</button>")
