@@ -91,29 +91,17 @@ var reset = function () {
 
 
 
-// Lyric Scroll Function Start
-// function ScrollDiv(){
+Lyric Scroll Function Start
+function ScrollDiv(){
 
-//    if(document.getElementById('lyrics').scrollTop<(document.getElementById('lyrics').scrollHeight-document.getElementById('lyrics').offsetHeight)){-1
-//          document.getElementById('lyrics').scrollTop=document.getElementById('lyrics').scrollTop+1
-//          }
-//    else {document.getElementById('lyrics').scrollTop=0;}
-// }
+   if(document.getElementById('lyrics').scrollTop<(document.getElementById('lyrics').scrollHeight-document.getElementById('lyrics').offsetHeight)){-1
+         document.getElementById('lyrics').scrollTop=document.getElementById('lyrics').scrollTop+1
+         }
+   else {document.getElementById('lyrics').scrollTop=0;}
+}
 
-// setInterval(ScrollDiv,100)
-// Lyric Scroll Function End
-
-
-
-
-
-
-
-
-
-
-
-
+setInterval(ScrollDiv,100)
+Lyric Scroll Function End
 
 
 
