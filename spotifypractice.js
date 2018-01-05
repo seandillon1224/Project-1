@@ -17,6 +17,7 @@
  var cover3;
  var cover4;
  var cover5;
+ var replacedSong;
 
  // Generate link for sign in button using application ID from Spotify
   function makeSignInLink(){
@@ -94,6 +95,10 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         cover4=spotifySongResult.tracks.items[3].album.images[0].url
         cover5=spotifySongResult.tracks.items[4].album.images[0].url
 
+        replacedSong = replacedSong.replace("2TpxZ7JUBn3uw46aR7qd6V", "spotifySongResult.tracks.items[0].uri")
+
+        $("#artist-information").append(replacedSong)
+
 
 $(".carousel-item").empty();
 
@@ -163,7 +168,6 @@ var album5 = $("<div>");
   $('.artist-information').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3><h4>'+spotifySongResult.tracks.items[i].album.name+'</h4><h5>'+spotifySongResult.tracks.items[i].artists[0].name+'</li>')
     
 // <img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/>
-// spotifySongResult.tracks.items[i].uri
 
 
     }
