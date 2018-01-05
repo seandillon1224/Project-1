@@ -100,7 +100,6 @@ $(".carousel-item").empty();
 var album = $("<div>");
         album.attr({
             "class": 'album',
-            "data-random": random
             // "href": spotifySongResult.tracks.items[i].uri
         });
         album.css({
