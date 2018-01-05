@@ -1,38 +1,5 @@
 // Carousel Start
 
-var images = []
-var resetAndStart = function () {
-    $(".carousel-item").empty();
-    var images = [
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                '',
-                ];
-for(var i = 0; i < 10; i++){
-  
-    var album = $("<div>");
-        album.attr({
-            "class": 'album',
-            "data-random": random
-        });
-        album.css({
-            "background-image":"url('" + (images[i]) + "')",
-            "background-size":"cover"
-        });
-    $(".carousel-item").append(album);
-    }
-resetAndStart();
-var reset = function () {
-}
-// Carousel End
-}
 
 
 

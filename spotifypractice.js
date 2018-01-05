@@ -5,8 +5,9 @@
  var musixTrackId;
  var musixLyrics; // just the lyrics
  var musixLyricsResult; // whole object
- var songToPlayer;
-
+ var songToPlayer
+ var images;
+ var album;
  // Generate link for sign in button using application ID from Spotify
   function makeSignInLink(){
     var msrtSpotifyClientId = "3134bcfa555b4933a9d6e61d83753f7b";
@@ -87,9 +88,27 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
       // $("#albumtitle"+iPlus).html(spotifySongResult.tracks.items[i].album.name);
       // $("#artisttitle"+iPlus).html(spotifySongResult.tracks.items[i].artists[0].name);
 
-  $('#artist-container').append('<li><img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/><h3>'+spotifySongResult.tracks.items[i].name+'</h3></li>')
+  $('.artist-information').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3></li>')
     
+images = spotifySongResult.tracks.items[i].album.images[0].url
+console.log(images)
+// <img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/>
 // spotifySongResult.tracks.items[i].uri
+
+$(".carousel-item").empty();
+
+var album = $("<div>");
+        album.attr({
+            "class": 'album',
+            "data-random": random
+            // "href": spotifySongResult.tracks.items[i].uri
+        });
+        album.css({
+            "background-image":"url('" + (images[i]) + "')",
+            "background-size":"cover"
+        });
+    $(".carousel-item").append(album);
+    }
     }
       }); 
 
