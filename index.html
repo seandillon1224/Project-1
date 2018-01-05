@@ -4,61 +4,241 @@
 <html>
 
 <head>
-  <title>Project One</title>
+	<title>Project One</title>
+<!-- Bootstrap, JS, jQuery Link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+=======
+  rap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-  </style>
 
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
+<!-- Stylesheets Links -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/mid-content-js/mid-content.js">
 
+<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
 </head>
 
 
 
 <body>
+
+  <!-- Navigation Bar / Header / Search Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#"><img src="assets/images/logo_bw.png" style="width: 100%;"></a>
+  <button type="button" class="btn btn-default navbar-btn">Sign in</button>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-       <input class="form-control mr-sm-2 searchbar" type="text" placeholder="Search">
-       <button class="btn btn-secondary my-2 my-sm-0 searchbutton" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-    
+    <ul class="navbar-nav mr-auto"></ul>
 
-<div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit" style="font-family: 'Pathway Gothic One', sans-serif;">Search</button>
+    </form>
+  
+</nav>
+
+
+  <!-- Navigation Bar / Header / Search Bar END -->
+
+
+<!-- Top Songs Header -->
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+    <h1 style="color: white; margin-top: 20px; font-family: 'Pathway Gothic One', sans-serif;">Top 5 Songs of 2017</h1>
+  </div>
+</div>
+</div>
+<!-- Top Songs Header END-->
+
+
+<!-- Carousel Start -->
+<br>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+  <!-- Inner Carousel START -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- Centered Images within Carousel -->
+      <center>
+        <img class="d-block w-50" src="https://yt3.ggpht.com/pHwZj3tkgC3SJFbuqebBoT7WtVcIwAijEmcbe9VDCauv9ZlG6uS2zjvZQUSO7SfFqa3xjYqGp_L4QbM7=s900-nd-c-c0xffffffff-rj-k-no" alt="First slide" height="440" width="30">
+    </div>
+  </center>
+    <div class="carousel-item">
+      <center>
+      <img class="d-block w-50" src="https://yt3.ggpht.com/pHwZj3tkgC3SJFbuqebBoT7WtVcIwAijEmcbe9VDCauv9ZlG6uS2zjvZQUSO7SfFqa3xjYqGp_L4QbM7=s900-nd-c-c0xffffffff-rj-k-no" alt="Second slide" height="440" width="30">
+    </div>
+  </center>
+    <div class="carousel-item">
+      <center>
+      <img class="d-block w-50" src="https://yt3.ggpht.com/pHwZj3tkgC3SJFbuqebBoT7WtVcIwAijEmcbe9VDCauv9ZlG6uS2zjvZQUSO7SfFqa3xjYqGp_L4QbM7=s900-nd-c-c0xffffffff-rj-k-no" alt="Third slide" height="440" width="30">
+    </center>
+    </div>
+  </div>
+  <!-- Centered Images within Carousel END -->
+
+  <!-- Carousel Buttons Next & Previous -->
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+   <!-- Carousel Buttons Next & Previous END -->
+
+</div>
+ <!-- Inner Carousel END -->
+   <!-- Carousel End -->
+
+ <!-- Song Status START -->
+<center>
+<div id="length" style="font-family: 'Pathway Gothic One', sans-serif; color: #595959;">Duration:</div>
+    <div id="status" style="color:red; font-family: 'Pathway Gothic One', sans-serif; color: #595959;">Status: Loading</div>
+    
+  <div class="playpause" style="margin-top: 10px; margin-bottom: 20px;">
+    <input type="checkbox" value="None" id="playpause" name="check" />
+    <label for="playpause" tabindex=1></label>
+  </div>
+    <button type="button" class="btn btn-primary btn-sm active" style="color: white;">Restart</button>
+   
+    <h2 style="font-family: 'Pathway Gothic One', sans-serif; color: #595959; font-size: 18px; margin-top: 20px;">Playing Information</h2>
+    <div id="currentTime" style="color: #595959;">0</div>
+</center>
+<hr>
+<!-- Song Status END -->
+  
+<div id="border-between-divs"></div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Lyrics DIV -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-6" style="left: -150px;">
+  <img src="assets/images/iphone.png" style="width:40%;"></div>
+<marquee class="col-md-4" id="lyrics" direction="up" scrollamount="1">
+  C - I - A - R - A
+
+Pull up your pants (just like 'em)
+Take out the trash (just like 'em)
+Gettin' your cash like 'em
+Fast like 'em
+Girl, you wanna act like he did (I'm talkin' 'bout)
+Security codes on everything
+On vibrate so your phone don't ever ring
+Joint account and another one he don't know about (hey)
+
+Wish we could switch up the roles and I could be that
+Tell you I love you, but when you call, I never get back
+Would you ask them questions like me, like where you be at?
+'Cause I'm out, four in the morning on the corner, rolling, doing my own thing
+
+What if I, had a thing on the side
+Made you cry?
+Would the rules change up or would they still apply?
+If I played you like a toy
+Sometimes I wish I could act like a boy
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+Girl, go ahead and be (just like 'em)
+Go run the streets (just like 'em)
+Go home, missin' sleep like 'em, creep like 'em
+Front wit' your friends
+Act hard when you wit' 'em, like 'em
+Keep a straight face when you tell a lie
+Always keep an airtight alibi
+Keep it hid in the dark
+What he don't know won't break his heart (hey)
+
+Wish we could switch up the roles and I could be that
+Tell you I love you, but when you call, I never get back
+Would you ask them questions like me, like where you be at?
+'Cause I'm out, four in the morning on the corner, rolling, doing my own thing
+
+What if I, had a thing on the side
+Made you cry?
+Would the rules change up or would they still apply?
+If I played you like a toy
+Sometimes I wish I could act like a boy
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+If I was always gone
+Let the sun beat me home (Would you like that?)
+I told you I was with my crew when I knew it wasn't true if I act like you
+Walked a mile off in your shoes (Would you like that?)
+Messing with your head again
+Dose of your own medicine
+
+What if I, had a thing on the side
+Made you cry?
+Would the rules change up or would they still apply?
+If I played you like a toy
+Sometimes I wish I could act like a boy
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+Can't be getting mad what, you mad?
+Can't handle that
+
+R-A, go, here's the clutch
+
+If I paged you (Would you like that?)
+Had friends (Would you like that?)
+Never call (Would you like that?)
+No, no, you wouldn't like that, no!
+
+What if I, made you cry? Would they still apply?
+What if I, if I played you like a toy
+Sometimes I wish I could act like a boy
+
+  </marquee>
+</div>
+<!-- <div>
   <a id="sign-in" href="" class=""><i class="material-icons right"></i>Sign In</a>
   <ul id="artist-container">
   </ul>
@@ -72,11 +252,41 @@
 
 <div id="playerDiv">
   <button class="btn btn-secondary my-2 my-sm-0 playButton" type="submit">Play!</button>
+</div> -->
+
+
+
+
+
+
+ 
+
+
+
+<nav id="bottomFooter" class="navbar fixed-bottom navbar-light bg-faded">
+  <a class="navbar-brand">
+
+<div class="themes">
+   
+    <!--Three themes in circles-->
+    <button class="button1">T1</button>
+    <button class="button2">T2</button>
+    <button class="button3">T3</button>
 </div>
+    <!--Facebook Button-->
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"><img src="assets/images/facebook.png"></div>
+  <!-- End of footer -->
+  </a>
+</nav>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="assets/mid-content-js/mid-content.js"></script>
 
 </body>
-<script type="text/javascript" src="./spotifypractice.js"></script>
 </html>
-
-
-
