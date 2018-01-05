@@ -97,7 +97,7 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
 
         replacedSong= $("artist-information").val()
 
-        replacedSong = replacedSong.replace("2TpxZ7JUBn3uw46aR7qd6V", "spotifySongResult.tracks.items[0].uri")
+        replacedSong = replacedSong.replace("spotify:track:2TpxZ7JUBn3uw46aR7qd6V", "spotifySongResult.tracks.items[0].uri")
 
         $("#artist-information").append(replacedSong)
 
