@@ -11,10 +11,10 @@
   function makeSignInLink(){
     var msrtSpotifyClientId = "3134bcfa555b4933a9d6e61d83753f7b";
 
-    var queryURLforSpotifyToken = "https://accounts.spotify.com/authorize/?client_id=" + msrtSpotifyClientId + "&response_type=token&redirect_uri=https://seandillon1224.github.io/Project-1/"
+    var queryURLforSpotifyToken = "https://accounts.spotify.com/authorize/?client_id=" + msrtSpotifyClientId + "&response_type=token&redirect_uri=localhost:8080"
     // console.log(queryURLforSpotifyToken);
 
-    $('#sign-in').attr('href', queryURLforSpotifyToken);
+    $("#button_signup").append("<a href='"+queryURLforSpotifyToken+"' class='button'>Sign Up</button>")
 
   }
   function getUserSpotifyId(){
@@ -87,22 +87,22 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
       // $("#albumtitle"+iPlus).html(spotifySongResult.tracks.items[i].album.name);
       // $("#artisttitle"+iPlus).html(spotifySongResult.tracks.items[i].artists[0].name);
 
-  $('#artist-container').append('<li><img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/><h3>'+spotifySongResult.tracks.items[i].name+'</h3><p id="linkURL">'spotifySongResult.tracks.items[i].uri'</p></li>')
+  $('#artist-container').append('<li><img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/><h3>'+spotifySongResult.tracks.items[i].name+'</h3></li>')
     
-
+// spotifySongResult.tracks.items[i].uri
     }
       }); 
 
 })
 
 
-$("#linkURL").on("click", function(){
-  songToPlayer=$("linkURL").val()
+// $("#linkURL").on("click", function(){
+//   songToPlayer=$("linkURL").val()
 
-$("#playerDiv").prepend('<iframe src="https://open.spotify.com/embed?uri=spotify:track:"+ songToPlayer +" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>')
+// $("#playerDiv").prepend('<iframe src="https://open.spotify.com/embed?uri=spotify:track:"+ songToPlayer +" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>')
 
 
-})
+// })
 
 
 $(document).ready(function(){
