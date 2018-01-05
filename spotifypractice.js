@@ -61,6 +61,8 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
 
 
   event.preventDefault()
+
+  $("#mainheader").text("Top 5 Most Relevant!")
   
   songTitle = $(".searchbar").val()
   console.log(songTitle)
@@ -82,6 +84,7 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         spotifySongResult = songResponse;
         console.log(spotifySongResult)
         cover1=spotifySongResult.tracks.items[0].album.images[0].url
+        console.log(cover1)
         cover2=spotifySongResult.tracks.items[1].album.images[0].url
         cover3=spotifySongResult.tracks.items[2].album.images[0].url
         cover4=spotifySongResult.tracks.items[3].album.images[0].url
