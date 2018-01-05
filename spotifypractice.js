@@ -8,11 +8,16 @@
  var songToPlayer
  var images = [];
  var album;
- var cover1
- var cover2
- var cover3
- var cover4
- var cover5
+ var album1;
+ var album2;
+ var album3;
+ var album4;
+ var album5;
+ var cover1;
+ var cover2;
+ var cover3;
+ var cover4;
+ var cover5;
 
  // Generate link for sign in button using application ID from Spotify
   function makeSignInLink(){
@@ -89,41 +94,79 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         cover3=spotifySongResult.tracks.items[2].album.images[0].url
         cover4=spotifySongResult.tracks.items[3].album.images[0].url
         cover5=spotifySongResult.tracks.items[4].album.images[0].url
-        $(".cover1").append(cover1)
-        $(".cover2").append(cover2)
-        $(".cover3").append(cover3)
-        $(".cover4").append(cover4)
-        $(".cover5").append(cover5)
+
+
+$(".carousel-item").empty();
+
+var album1 = $("<div>");
+        album.attr({
+            "class": 'album',
+            // "href": spotifySongResult.tracks.items[i].uri
+        });
+        album.css({
+            "background-image":"url('" + cover1 + "')",
+            "background-size":"cover"
+        });
+    $(".car1").append(album1);
+
+var album2 = $("<div>");
+        album.attr({
+            "class": 'album',
+            // "href": spotifySongResult.tracks.items[i].uri
+        });
+        album.css({
+            "background-image":"url('" + cover2 + "')",
+            "background-size":"cover"
+        });
+    $(".car2").append(album2);
+
+
+var album3 = $("<div>");
+        album.attr({
+            "class": 'album',
+            // "href": spotifySongResult.tracks.items[i].uri
+        });
+        album.css({
+            "background-image":"url('" + cover3 + "')",
+            "background-size":"cover"
+        });
+    $(".car3").append(album3);
+
+
+var album4 = $("<div>");
+        album.attr({
+            "class": 'album',
+            // "href": spotifySongResult.tracks.items[i].uri
+        });
+        album.css({
+            "background-image":"url('" + cover4 + "')",
+            "background-size":"cover"
+        });
+    $(".car4").append(album4);
+
+
+var album5 = $("<div>");
+        album.attr({
+            "class": 'album',
+            // "href": spotifySongResult.tracks.items[i].uri
+        });
+        album.css({
+            "background-image":"url('" + cover5 + "')",
+            "background-size":"cover"
+        });
+    $(".car5").append(album5);
 
 
   for (var i = 0; i < 5; i++) {
       console.log(spotifySongResult)
       var iPlus = i+1;
-      // $("#albumimage"+iPlus).attr('src', );
-      // $("#albumimage"+iPlus).parent().data('spotifyID', spotifySongResult.tracks.items[i].id);
-      // // console.log("----- Spotify ID -----");
-      // // console.log($("#song-img"+iPlus).data('spotifyID'));
-      // $("#songtitle"+iPlus).html(spotifySongResult.tracks.items[i].name);
-      // $("#albumtitle"+iPlus).html(spotifySongResult.tracks.items[i].album.name);
-      // $("#artisttitle"+iPlus).html(spotifySongResult.tracks.items[i].artists[0].name);
 
   $('.artist-information').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3><h4>'+spotifySongResult.tracks.items[i].album.name+'</h4><h5>'+spotifySongResult.tracks.items[i].artists[0].name+'</li>')
     
 // <img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/>
 // spotifySongResult.tracks.items[i].uri
 
-$(".carousel-item").empty();
 
-var album = $("<div>");
-        album.attr({
-            "class": 'album',
-            // "href": spotifySongResult.tracks.items[i].uri
-        });
-        album.css({
-            "background-image":"url('" + (images[i]) + "')",
-            "background-size":"cover"
-        });
-    $(".carousel-item").append(album);
     }
     })
       }); 
