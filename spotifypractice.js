@@ -6,7 +6,7 @@
  var musixLyrics; // just the lyrics
  var musixLyricsResult; // whole object
  var songToPlayer
- var images;
+ var images = [];
  var album;
  // Generate link for sign in button using application ID from Spotify
   function makeSignInLink(){
@@ -90,7 +90,7 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
 
   $('.artist-information').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3><h4>'+spotifySongResult.tracks.items[i].album.name+'</h4><h5>'+spotifySongResult.tracks.items[i].artists[0].name+'</li>')
     
-images = spotifySongResult.tracks.items[i].album.images[0].url
+images.push(spotifySongResult.tracks.items[i].album.images[0].url)
 console.log(images)
 // <img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/>
 // spotifySongResult.tracks.items[i].uri
