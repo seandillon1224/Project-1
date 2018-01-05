@@ -7,7 +7,6 @@
  var musixLyricsResult; // whole object
  var songToPlayer
  var images = [];
- var album;
  var album1;
  var album2;
  var album3;
@@ -99,22 +98,22 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
 $(".carousel-item").empty();
 
 var album1 = $("<div>");
-        album.attr({
+        album1.attr({
             "class": 'album',
             // "href": spotifySongResult.tracks.items[i].uri
         });
-        album.css({
+        album1.css({
             "background-image":"url('" + cover1 + "')",
             "background-size":"cover"
         });
     $(".car1").append(album1);
 
 var album2 = $("<div>");
-        album.attr({
+        album2.attr({
             "class": 'album',
             // "href": spotifySongResult.tracks.items[i].uri
         });
-        album.css({
+        album2.css({
             "background-image":"url('" + cover2 + "')",
             "background-size":"cover"
         });
@@ -122,11 +121,11 @@ var album2 = $("<div>");
 
 
 var album3 = $("<div>");
-        album.attr({
+        album3.attr({
             "class": 'album',
             // "href": spotifySongResult.tracks.items[i].uri
         });
-        album.css({
+        album3.css({
             "background-image":"url('" + cover3 + "')",
             "background-size":"cover"
         });
@@ -134,11 +133,11 @@ var album3 = $("<div>");
 
 
 var album4 = $("<div>");
-        album.attr({
+        album4.attr({
             "class": 'album',
             // "href": spotifySongResult.tracks.items[i].uri
         });
-        album.css({
+        album4.css({
             "background-image":"url('" + cover4 + "')",
             "background-size":"cover"
         });
@@ -146,11 +145,11 @@ var album4 = $("<div>");
 
 
 var album5 = $("<div>");
-        album.attr({
+        album5.attr({
             "class": 'album',
             // "href": spotifySongResult.tracks.items[i].uri
         });
-        album.css({
+        album5.css({
             "background-image":"url('" + cover5 + "')",
             "background-size":"cover"
         });
