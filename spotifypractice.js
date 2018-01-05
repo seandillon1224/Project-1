@@ -8,6 +8,12 @@
  var songToPlayer
  var images = [];
  var album;
+ var cover1
+ var cover2
+ var cover3
+ var cover4
+ var cover5
+
  // Generate link for sign in button using application ID from Spotify
   function makeSignInLink(){
     var msrtSpotifyClientId = "3134bcfa555b4933a9d6e61d83753f7b";
@@ -75,6 +81,16 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         // Globally store the Song Search Response
         spotifySongResult = songResponse;
         console.log(spotifySongResult)
+        cover1=spotifySongResult.tracks.items[0].album.images[0].url
+        cover2=spotifySongResult.tracks.items[1].album.images[0].url
+        cover3=spotifySongResult.tracks.items[2].album.images[0].url
+        cover4=spotifySongResult.tracks.items[3].album.images[0].url
+        cover5=spotifySongResult.tracks.items[4].album.images[0].url
+        $(".cover1").append(cover1)
+        $(".cover2").append(cover2)
+        $(".cover3").append(cover3)
+        $(".cover4").append(cover4)
+        $(".cover5").append(cover5)
 
 
   for (var i = 0; i < 5; i++) {
@@ -90,8 +106,6 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
 
   $('.artist-information').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3><h4>'+spotifySongResult.tracks.items[i].album.name+'</h4><h5>'+spotifySongResult.tracks.items[i].artists[0].name+'</li>')
     
-images.push(spotifySongResult.tracks.items[i].album.images[0].url)
-console.log(images)
 // <img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/>
 // spotifySongResult.tracks.items[i].uri
 
@@ -113,7 +127,7 @@ var album = $("<div>");
 
 // function lyricsGrab(){
 //   $(":header").on("click", function grabbing(){
-    
+
 //   }
 // }
 
@@ -124,6 +138,7 @@ var album = $("<div>");
 
 
 // })
+
 
 
 $(document).ready(function(){
