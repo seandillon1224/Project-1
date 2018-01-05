@@ -109,10 +109,9 @@ var album = $("<div>");
         });
     $(".carousel-item").append(album);
     }
-    }
+    })
       }); 
 
-})
 
 
 // $("#linkURL").on("click", function(){
