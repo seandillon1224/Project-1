@@ -88,7 +88,7 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
       // $("#albumtitle"+iPlus).html(spotifySongResult.tracks.items[i].album.name);
       // $("#artisttitle"+iPlus).html(spotifySongResult.tracks.items[i].artists[0].name);
 
-  $('.artist-information').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3></li>')
+  $('.artist-information').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3><h4>'+spotifySongResult.tracks.items[i].album.name+'</h4><h5>'+spotifySongResult.tracks.items[i].artists[0].name+'</li>')
     
 images = spotifySongResult.tracks.items[i].album.images[0].url
 console.log(images)
