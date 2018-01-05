@@ -111,7 +111,11 @@ var album = $("<div>");
     })
       }); 
 
-
+// function lyricsGrab(){
+//   $(":header").on("click", function grabbing(){
+    
+//   }
+// }
 
 // $("#linkURL").on("click", function(){
 //   songToPlayer=$("linkURL").val()

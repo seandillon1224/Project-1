@@ -17,8 +17,9 @@ $(".searchbutton").on("click", function queryMusixForId(trackName){
 	//trackName = trackName.replace(/ /g, "%20").toLowerCase();
 
 	trackName = $(".searchbar").val();
+	artistName = $(".artist-input").val();
 	console.log(trackName);
-	 var queryURL = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=" + trackName + "&f_has_lyrics=1" + "&format=json&" + "apikey=40cadfe43b9ed1c6bcc47270c4b635c0";
+	 var queryURL = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=" + trackName + "&q_artist=" + artistName + "&f_has_lyrics=1" + "&format=json&" + "apikey=40cadfe43b9ed1c6bcc47270c4b635c0";
 
 // "&f_has_lyrics=1" + "&format=json" +
 
@@ -76,7 +77,7 @@ function queryMusixForLyrics(){
       musixLyrics = JSON.stringify(musixLyrics);
       console.log(musixLyrics)
 
-	$(".lyrics").append(musixLyrics);
+	$("#lyrics").append(musixLyrics);
 
  });
 
