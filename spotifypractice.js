@@ -95,11 +95,11 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         cover4=spotifySongResult.tracks.items[3].album.images[0].url
         cover5=spotifySongResult.tracks.items[4].album.images[0].url
 
-        replacedSong= $("artist-information").val()
+        // replacedSong= $("artist-information").val()
 
-        replacedSong = replacedSong.replace("spotify:track:2TpxZ7JUBn3uw46aR7qd6V", "spotifySongResult.tracks.items[0].uri")
+        // replacedSong = replacedSong.replace("spotify:track:2TpxZ7JUBn3uw46aR7qd6V", "spotifySongResult.tracks.items[0].uri")
 
-        $("#artist-information").append(replacedSong)
+        // $("#artist-information").append(replacedSong)
 
 
 $(".carousel-item").empty();
