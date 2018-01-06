@@ -100,6 +100,9 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         cover4=spotifySongResult.tracks.items[3].album.images[0].url
         cover5=spotifySongResult.tracks.items[4].album.images[0].url
 
+var str = $(".artist-information").val();
+var res = str.replace("spotify:track:2TpxZ7JUBn3uw46aR7qd6V", "spotifySongResult.tracks.items[0].uri");
+
         //Replace the spotify link with the top song selection
 
         // replacedSong= $(".artist-information").val()
@@ -132,8 +135,8 @@ var album2 = $("<div>");
         album2.css({
             "background-image":"url('" + cover2 + "')",
             "background-size":"cover"
-        });
     $(".car2").append(album2);
+        });
 
 
 var album3 = $("<div>");
@@ -176,7 +179,7 @@ var album5 = $("<div>");
       console.log(spotifySongResult)
       var iPlus = i+1;
 
-  $('.artist-information').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3><h4>'+spotifySongResult.tracks.items[i].album.name+'</h4><h5>'+spotifySongResult.tracks.items[i].artists[0].name+'</li>')
+  $('.artist-info2').append('<li><h3>'+spotifySongResult.tracks.items[i].name+'</h3><h4>'+spotifySongResult.tracks.items[i].album.name+'</h4><h5>'+spotifySongResult.tracks.items[i].artists[0].name+'</li>')
     
 // <img src="'+spotifySongResult.tracks.items[i].album.images[0].url+'"/>
 
