@@ -102,6 +102,7 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
 
 var str = $(".artist-information").val();
 var res = str.replace("spotify:track:2TpxZ7JUBn3uw46aR7qd6V", "spotifySongResult.tracks.items[0].uri");
+$(".artist-information").html(res)
 
         //Replace the spotify link with the top song selection
 
