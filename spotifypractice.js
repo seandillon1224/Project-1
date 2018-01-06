@@ -100,7 +100,7 @@ $(".searchbutton").on("click", function spotifySongSearch (songTitle) {
         cover4=spotifySongResult.tracks.items[3].album.images[0].url
         cover5=spotifySongResult.tracks.items[4].album.images[0].url
 
- $('.song-play').attr('src','"https://open.spotify.com/embed?uri="'+spotifySongResult.tracks.items[0].uri);
+ $('.song-play').attr('src','"https://open.spotify.com/embed?uri="+spotifySongResult.tracks.items[0].uri');
 
 
         //Replace the spotify link with the top song selection
