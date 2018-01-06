@@ -77,6 +77,10 @@ function queryMusixForLyrics(){
       musixLyrics = JSON.stringify(musixLyrics);
       console.log(musixLyrics)
 
+       musixLyrics = musixLyrics.replace(/[0-9]/g , " ");
+       musixLyrics = musixLyrics.replace("(" , " ");
+       musixLyrics = musixLyrics.replace(")" , " ");
+
 	$("#lyrics").append(musixLyrics);
 
  });
