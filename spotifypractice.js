@@ -135,8 +135,9 @@ var album2 = $("<div>");
         album2.css({
             "background-image":"url('" + cover2 + "')",
             "background-size":"cover"
-    $(".car2").append(album2);
+   
         });
+         $(".car2").append(album2);
 
 
 var album3 = $("<div>");
