@@ -17,12 +17,28 @@
 
 
 <!-- Stylesheets Links -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
     <link rel="stylesheet" type="text/css" href="assets/mid-content-js/mid-content.js">
 
 <!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+
+  <!-- Link Theme Style Sheets -->
+
+<link id="pagestyle" rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- Swapping Style Sheet JavaScript -->   
+ 
+
+<script>
+function swapStyleSheet(sheet){
+  document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+     
+
+<!-- End of Javascript for Themes -->
 </head>
 
 
@@ -180,12 +196,13 @@
 <nav id="bottomFooter" class="navbar fixed-bottom navbar-light bg-faded">
   <a class="navbar-brand">
 
-<div class="themes">
-   
-    <!--Three themes in circles-->
-    <button class="button1">T1</button>
-    <button class="button2">T2</button>
-    <button class="button3">T3</button>
+<!--Theme Buttons-->    
+
+  <div id="themes">
+
+<button onclick="swapStyleSheet('assets/css/style.css')">Default</button>
+<button onclick="swapStyleSheet('assets/css/blue.css')">Blue</button>
+<button onclick="swapStyleSheet('assets/css/slate.css')">Slate</button>
 </div>
     <!--Facebook Button-->
 <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"><img src="assets/images/facebook.png"></div>
